@@ -1,22 +1,22 @@
-# Portfólio Pessoal - Lucas Andrade
+# Personal Portfolio - Lucas Andrade
 
-Este é o repositório do meu portfólio pessoal, uma página única (single-page) desenvolvida para apresentar minhas habilidades, projetos e informações de contato. A página foi projetada para ser limpa, moderna e responsiva, com conteúdo dinâmico carregado a partir da API do GitHub.
+This is the repository for my personal portfolio, a single-page website developed to showcase my skills, projects, and contact information. The page was designed to be clean, modern, and responsive, with dynamic content loaded from the GitHub API.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-O projeto foi construído utilizando as seguintes tecnologias:
+The project was built using the following technologies:
 
 - **HTML5**
 - **CSS3**
-  - **TailwindCSS:** Framework CSS para estilização rápida e responsiva.
+  - **TailwindCSS:** A CSS framework for rapid and responsive styling.
 - **JavaScript (Vanilla)**
-  - Consumo da API do GitHub com `fetch`.
-  - Manipulação do DOM para exibir dados dinâmicos e gerenciar classes de CSS.
-- **Feather Icons:** Biblioteca de ícones SVG.
-- **Devicon:** Conjunto de ícones representando linguagens e ferramentas de programação.
-- **Google Fonts:** Para a tipografia (família Inter).
+  - GitHub API consumption using `fetch`.
+  - DOM manipulation to display dynamic data and manage CSS classes.
+- **Feather Icons:** An SVG icon library.
+- **Devicon:** A set of icons representing programming languages and tools.
+- **Google Fonts:** For typography (Inter family).
 
-## Contato
+## Contact
 
 **Lucas Andrade**
 - **GitHub:** @lucasonline0
