@@ -49,6 +49,12 @@ const Header = () => {
             [ About ]
           </button>
           <button
+            onClick={() => scrollToSection("experience")}
+            className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
+          >
+            [ Experience ]
+          </button>
+          <button
             onClick={() => scrollToSection("projects")}
             className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
           >
@@ -89,6 +95,12 @@ const Header = () => {
               className="block w-full text-left text-sm tracking-widest uppercase hover:text-accent transition-colors"
             >
               [ About ]
+            </button>
+            <button
+              onClick={() => scrollToSection("experience")}
+              className="block w-full text-left text-sm tracking-widest uppercase hover:text-accent transition-colors"
+            >
+              [ Experience ]
             </button>
             <button
               onClick={() => scrollToSection("projects")}
