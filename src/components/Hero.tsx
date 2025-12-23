@@ -43,7 +43,7 @@ const Hero = () => {
 
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12 animate-fade-up opacity-0 delay-500" style={{ animationFillMode: 'forwards' }}>
           <p className="text-muted-foreground text-xs sm:text-sm md:text-base uppercase tracking-wide leading-relaxed">
-            "SECURITY ENGINEER e estudante de Ciência da Computação que projeta sistemas de alta performance — transformando conceitos complexos de defesa em arquiteturas blindadas e resilientes."
+            "SECURITY ENGINEER que projeta sistemas de alta performance — transformando conceitos complexos de defesa em arquiteturas blindadas e resilientes."
           </p>
         </div>
 
