@@ -2,6 +2,18 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "WAF-Proxy (Defensive Engine)",
+    description: "Um Web Application Firewall (WAF) e Reverse Proxy de alto desempenho construído em Rust. Combina a segurança de memória e velocidade do Rust com a flexibilidade de scripts Lua para inspeção de tráfego, protegendo aplicações contra ataques como SQL Injection e XSS sem necessidade de recompilação.",
+    tags: ["Rust", "Lua"],
+    link: "https://github.com/lucasonline0/waf-proxy",
+  },
+  {
+    title: "GoSpector (Reconnaissance CLI)",
+    description: "Uma ferramenta de CLI (Command Line Interface) focada em offensive security, desenhada para enumeração de subdomínios e scan de portas em larga escala. Implementa padrões de concorrência avançados em Go para garantir zero latência de feedback e integração perfeita em pipelines de CI/CD ou pentest.",
+    tags: ["Go"],
+    link: "https://github.com/lucasonline0/gospector",
+  },
+  {
     title: "Calop Agender",
     description: "Aplicação Full-Stack para agendamento em barbearias, com app para clientes e dashboard para administradores.",
     tags: ["React Native", "SQLite", "Expo"],
@@ -14,28 +26,16 @@ const projects = [
     link: "https://github.com/amazonext/duck-manager",
   },
   {
-    title: "Cofre de Senhas",
-    description: "Ferramenta segura para armazenamento local de senhas, utilizando criptografia para proteger os dados.",
-    tags: ["Python", "CustomTkinter"],
-    link: "https://github.com/lucasonline0/Desktop-Password-Vault",
-  },
-  {
     title: "LogFlux",
     description: "Analisador de logs com interface web que transforma arquivos de syslog em insights visuais.",
     tags: ["Python", "Flask", "JavaScript"],
     link: "https://github.com/amazonext/LogFlux",
   },
   {
-    title: "WAF-Proxy (Defensive Engine)",
-    description: "Um Web Application Firewall (WAF) e Reverse Proxy de alto desempenho construído em Rust. Combina a segurança de memória e velocidade do Rust com a flexibilidade de scripts Lua para inspeção de tráfego, protegendo aplicações contra ataques como SQL Injection e XSS sem necessidade de recompilação.",
-    tags: ["Rust", "Lua"],
-    link: "https://github.com/amazonext/waf-proxy",
-  },
-  {
-    title: "GoSpector (Reconnaissance CLI)",
-    description: "Uma ferramenta de CLI (Command Line Interface) focada em offensive security, desenhada para enumeração de subdomínios e scan de portas em larga escala. Implementa padrões de concorrência avançados em Go para garantir zero latência de feedback e integração perfeita em pipelines de CI/CD ou pentest.",
-    tags: ["Go"],
-    link: "https://github.com/amazonext/gospector",
+    title: "Cofre de Senhas",
+    description: "Ferramenta segura para armazenamento local de senhas, utilizando criptografia para proteger os dados.",
+    tags: ["Python", "CustomTkinter"],
+    link: "https://github.com/lucasonline0/Desktop-Password-Vault",
   },
 ];
 
