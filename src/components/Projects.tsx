@@ -26,16 +26,16 @@ const projects = [
     link: "https://github.com/amazonext/LogFlux",
   },
   {
-    title: "Network Monitor",
-    description: "Plataforma de monitoramento de rede para detectar padrões suspeitos como ataques DDoS.",
-    tags: ["Python", "Flask"],
-    link: "https://github.com/lucasonline0/Network_Monitor_IA",
+    title: "WAF-Proxy (Defensive Engine)",
+    description: "Um Web Application Firewall (WAF) e Reverse Proxy de alto desempenho construído em Rust. Combina a segurança de memória e velocidade do Rust com a flexibilidade de scripts Lua para inspeção de tráfego, protegendo aplicações contra ataques como SQL Injection e XSS sem necessidade de recompilação.",
+    tags: ["Rust", "Lua"],
+    link: "https://github.com/amazonext/waf-proxy",
   },
   {
-    title: "DevSecOps Orchestrator",
-    description: "Pipeline CI/CD com GitHub Actions que escaneia código em busca de vulnerabilidades e segredos expostos.",
-    tags: ["GitHub Actions", "Python", "DevSecOps"],
-    link: "https://github.com/lucasonline0/Devsecops-Orchestrator",
+    title: "GoSpector (Reconnaissance CLI)",
+    description: "Uma ferramenta de CLI (Command Line Interface) focada em offensive security, desenhada para enumeração de subdomínios e scan de portas em larga escala. Implementa padrões de concorrência avançados em Go para garantir zero latência de feedback e integração perfeita em pipelines de CI/CD ou pentest.",
+    tags: ["Go"],
+    link: "https://github.com/amazonext/gospector",
   },
 ];
 
