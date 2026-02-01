@@ -9,62 +9,36 @@ import {
 
 const techCategories = [
   {
-    title: "Programming Languages",
+    title: "Core Programming",
     technologies: [
-      { name: "C", icon: "c" },
-      { name: "C++", icon: "cpp" },
-      { name: "C#", icon: "cs" },
       { name: "Go", icon: "go" },
-      { name: "Java", icon: "java" },
-      { name: "JavaScript", icon: "js" },
-      { name: "Lua", icon: "lua" },
-      { name: "PHP", icon: "php" },
-      { name: "Python", icon: "python" },
-      { name: "Ruby", icon: "ruby" },
       { name: "Rust", icon: "rust" },
-      { name: "Solidity", icon: "solidity" },
+      { name: "C++", icon: "cpp" },
       { name: "TypeScript", icon: "ts" },
+      { name: "Python", icon: "python" },
     ],
   },
   {
-    title: "Backend & Cloud Native",
+    title: "Infrastructure & Systems",
     technologies: [
-      { name: "Node.js", icon: "nodejs" },
-      { name: "NestJS", icon: "nestjs" },
-      { name: "PostgreSQL", icon: "postgresql" },
-      { name: "Redis", icon: "redis" },
-      { name: "MongoDB", icon: "mongodb" },
-      { name: "MySQL", icon: "mysql" },
-      { name: "Apache Kafka", icon: "kafka" },
       { name: "Docker", icon: "docker" },
       { name: "Kubernetes", icon: "kubernetes" },
       { name: "Terraform", icon: "terraform" },
       { name: "AWS", icon: "aws" },
+      { name: "PostgreSQL", icon: "postgresql" },
+      { name: "Redis", icon: "redis" },
+      { name: "Apache Kafka", icon: "kafka" },
       { name: "Nginx", icon: "nginx" },
-    ],
-  },
-  {
-    title: "Frontend Ecosystem",
-    technologies: [
-      { name: "React", icon: "react" },
-      { name: "Next.js", icon: "nextjs" },
-      { name: "Vue.js", icon: "vue" },
-      { name: "Tailwind CSS", icon: "tailwind" },
-      { name: "Vite", icon: "vite" },
-      { name: "HTML", icon: "html" },
-      { name: "CSS", icon: "css" },
     ],
   },
   {
     title: "Security & OS",
     technologies: [
-      { name: "Arch Linux", icon: "arch" },
       { name: "Linux", icon: "linux" },
+      { name: "Arch Linux", icon: "arch" },
       { name: "Kali Linux", icon: "kali" },
       { name: "Bash", icon: "bash" },
-      { name: "Vim", icon: "vim" },
       { name: "Git", icon: "git" },
-      { name: "Grafana", icon: "grafana" },
     ],
   },
 ];
@@ -78,12 +52,12 @@ const TechMarquee = () => {
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogTrigger asChild>
             <button className="block md:absolute md:left-4 md:top-1/2 md:-translate-y-1/2 text-background font-medium text-xs md:text-sm tracking-widest uppercase z-10 bg-foreground px-2 hover:text-foreground transition-colors cursor-pointer mb-2 md:mb-0">
-              Top Technologies ↘
+              Stack & Expertise ↘
             </button>
           </DialogTrigger>
           <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
             <DialogHeader>
-              <DialogTitle className="font-heading">Top Technologies</DialogTitle>
+              <DialogTitle className="font-heading">Technical Stack</DialogTitle>
             </DialogHeader>
             <div className="space-y-6">
               {techCategories.map((category, index) => (
