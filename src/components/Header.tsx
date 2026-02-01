@@ -28,25 +28,19 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
-        <div className="animate-fade-up opacity-0" style={{ animationFillMode: 'forwards' }}>
+        <div className="">
           <span className="font-heading text-xs md:text-sm font-bold tracking-wider">
             LUCAS<br />
             <span className="text-muted-foreground">MADUREIRA</span>
           </span>
         </div>
 
-        <div className="hidden md:flex items-center gap-6 lg:gap-8 animate-fade-up opacity-0 delay-200" style={{ animationFillMode: 'forwards' }}>
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           <button
             onClick={() => scrollToSection("home")}
             className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
           >
             [ Home ]
-          </button>
-          <button
-            onClick={() => scrollToSection("about")}
-            className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
-          >
-            [ About ]
           </button>
           <button
             onClick={() => scrollToSection("experience")}
@@ -58,17 +52,17 @@ const Header = () => {
             onClick={() => scrollToSection("projects")}
             className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
           >
-            [ My Works ]
+            [ Projects ]
           </button>
         </div>
 
-        <div className="hidden md:block animate-fade-up opacity-0 delay-300" style={{ animationFillMode: 'forwards' }}>
+        <div className="hidden md:block">
           <a
             href="mailto:jmadureira00@gmail.com"
             className="text-xs tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
           >
-            Contact Me
-            <span className="inline-block animate-float">↗</span>
+            Contact
+            <span className="inline-block">↗</span>
           </a>
         </div>
 
@@ -82,37 +76,31 @@ const Header = () => {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-b border-border animate-fade-up">
+        <div className="md:hidden bg-background border-b border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
             <button
               onClick={() => scrollToSection("home")}
-              className="block w-full text-left text-sm tracking-widest uppercase hover:text-accent transition-colors"
+              className="block w-full text-left text-sm tracking-widest uppercase"
             >
               [ Home ]
             </button>
             <button
-              onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-sm tracking-widest uppercase hover:text-accent transition-colors"
-            >
-              [ About ]
-            </button>
-            <button
               onClick={() => scrollToSection("experience")}
-              className="block w-full text-left text-sm tracking-widest uppercase hover:text-accent transition-colors"
+              className="block w-full text-left text-sm tracking-widest uppercase"
             >
               [ Experience ]
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className="block w-full text-left text-sm tracking-widest uppercase hover:text-accent transition-colors"
+              className="block w-full text-left text-sm tracking-widest uppercase"
             >
-              [ My Works ]
+              [ Projects ]
             </button>
             <a
               href="mailto:jmadureira00@gmail.com"
-              className="block text-sm tracking-widest uppercase hover:text-accent transition-colors"
+              className="block text-sm tracking-widest uppercase"
             >
-              Contact Me ↗
+              Contact ↗
             </a>
           </div>
         </div>
