@@ -5,13 +5,13 @@ const FeaturedProject = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black text-center mb-10 md:mb-16 uppercase tracking-wider animate-fade-up opacity-0" style={{ animationFillMode: 'forwards' }}>
-          Recent Works
+          Featured Work
         </h2>
 
         <div className="max-w-3xl mx-auto">
           <div className="group relative bg-card border border-border p-8 md:p-12 hover-lift card-shine animate-fade-in-scale opacity-0 delay-200" style={{ animationFillMode: 'forwards' }}>
             <div className="absolute top-3 left-3 md:top-4 md:left-4 text-[10px] md:text-xs tracking-widest uppercase text-accent">
-              Projeto em Destaque
+              Featured Project
             </div>
 
             <div className="text-center space-y-4 md:space-y-6 pt-6 md:pt-8">
@@ -20,7 +20,7 @@ const FeaturedProject = () => {
               </h3>
               
               <p className="text-muted-foreground text-sm md:text-base max-w-lg mx-auto">
-                Um Web Application Firewall (WAF) e Reverse Proxy de alto desempenho construído em Rust. Combina a segurança de memória e velocidade do Rust com a flexibilidade de scripts Lua para inspeção de tráfego, protegendo aplicações contra ataques como SQL Injection e XSS sem necessidade de recompilação.
+                A high-performance Web Application Firewall and Reverse Proxy engineered in Rust. Leverages zero-cost abstractions and memory safety for real-time traffic inspection. Supports dynamic Lua scripting for custom rule definitions against common vectors like SQLi and XSS.
               </p>
 
               <div className="flex justify-center gap-2 md:gap-3 flex-wrap">
