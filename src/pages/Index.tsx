@@ -54,7 +54,7 @@ const Index = () => {
           <div className="w-full px-4 sm:px-8 lg:px-14 py-5 md:py-8">
             <div className="flex items-center justify-between text-[10px] sm:text-xs uppercase tracking-[0.2em] text-white/90 animate-fade-up">
               <p>Lucas Madureira</p>
-              <p>Engenheiro de Segurança, Desenvolvedor</p>
+              <p>Estudante de Ciência da Computação, Desenvolvedor</p>
               <div className="flex gap-3 sm:gap-5">
                 <a href="#works" className="hover:text-[#e8cd9d] transition-colors">projetos</a>
                 <a href="#about" className="hover:text-[#e8cd9d] transition-colors">sobre</a>
@@ -66,9 +66,9 @@ const Index = () => {
               <div className="animate-slide-left" style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}>
                 <p className="text-[#f0dfc6] mb-2 text-lg">criativo</p>
                 <h1 className="uppercase font-black leading-[0.86] tracking-tight text-[54px] sm:text-[88px] lg:text-[120px]">
-                  Engenheiro
+                  Estudante de Ciência
                   <br />
-                  de Segurança
+                  da Computação
                 </h1>
               </div>
 
