@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, tags, link, delay = 0 }: ProjectCardP
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-[10px] md:text-xs uppercase tracking-widest text-foreground hover:text-accent transition-colors group/link border border-border px-3 md:px-4 py-1.5 md:py-2 hover:border-accent"
         >
-          <span>View Details</span>
+          <span>Ver detalhes</span>
           <ExternalLink className="w-2.5 h-2.5 md:w-3 md:h-3 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
         </a>
       </div>

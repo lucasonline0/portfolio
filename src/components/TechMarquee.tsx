@@ -9,7 +9,7 @@ import {
 
 const techCategories = [
   {
-    title: "Core Programming",
+    title: "Programação Base",
     technologies: [
       { name: "Go", icon: "go" },
       { name: "Rust", icon: "rust" },
@@ -19,7 +19,7 @@ const techCategories = [
     ],
   },
   {
-    title: "Infrastructure & Systems",
+    title: "Infraestrutura e Sistemas",
     technologies: [
       { name: "Docker", icon: "docker" },
       { name: "Kubernetes", icon: "kubernetes" },
@@ -32,7 +32,7 @@ const techCategories = [
     ],
   },
   {
-    title: "Security & OS",
+    title: "Segurança e SO",
     technologies: [
       { name: "Linux", icon: "linux" },
       { name: "Arch Linux", icon: "arch" },
@@ -52,12 +52,12 @@ const TechMarquee = () => {
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogTrigger asChild>
             <button className="block md:absolute md:left-4 md:top-1/2 md:-translate-y-1/2 text-background font-medium text-xs md:text-sm tracking-widest uppercase z-10 bg-foreground px-2 hover:text-foreground transition-colors cursor-pointer mb-2 md:mb-0">
-              Stack & Expertise ↘
+              Stack e Especialidades ↘
             </button>
           </DialogTrigger>
           <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
             <DialogHeader>
-              <DialogTitle className="font-heading">Technical Stack</DialogTitle>
+              <DialogTitle className="font-heading">Stack técnica</DialogTitle>
             </DialogHeader>
             <div className="space-y-6">
               {techCategories.map((category, index) => (
