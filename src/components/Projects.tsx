@@ -33,11 +33,11 @@ const Projects = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-16 space-y-4">
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-[0.15em] md:tracking-[0.2em]">
-            Selected Works
+            Projetos selecionados
           </h2>
           <p className="text-muted-foreground text-xs md:text-sm max-w-lg mx-auto px-4">
-            A curated selection of projects focusing on high-performance systems, 
-            defensive security architecture, and scalable backend engineering.
+            Uma seleção curada de projetos com foco em sistemas de alta performance, 
+            arquitetura de segurança defensiva e engenharia backend escalável.
           </p>
         </div>
 

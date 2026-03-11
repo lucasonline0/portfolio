@@ -2,15 +2,15 @@ import { Building2, ShieldCheck } from "lucide-react";
 
 const experiences = [
   {
-    period: "2025 - Present",
-    company: "Infrastructure & Data Specialist - Public Sector",
-    role: "Backend Engineer & Data Analyst",
+    period: "2025 - Presente",
+    company: "Engenheiro de Software no Setor Público",
+    role: "Atuação em sistemas e serviços para o setor público",
     icon: ShieldCheck,
   },
   {
-    period: "2023 - Present",
-    company: "Systems & Automation Specialist",
-    role: "Full-Stack Developer",
+    period: "2024 - Presente",
+    company: "Responsável pelo gerenciamento do banco de dados",
+    role: "Gestão, manutenção e otimização de banco de dados",
     icon: Building2,
   },
 ];
@@ -21,10 +21,10 @@ const Experience = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-16 space-y-4">
           <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-[0.15em] md:tracking-[0.2em]">
-            Experience
+            Experiência
           </h2>
           <p className="text-muted-foreground text-xs md:text-sm max-w-lg mx-auto px-4">
-            Professional trajectory focused on engineering scalable data solutions and secure infrastructure.
+            Trajetória profissional focada em soluções de dados escaláveis e infraestrutura segura.
           </p>
         </div>
 
