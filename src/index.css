@@ -286,3 +286,33 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes hero-pan {
+  0% {
+    background-position: 50% 45%;
+  }
+  50% {
+    background-position: 50% 55%;
+  }
+  100% {
+    background-position: 50% 45%;
+  }
+}
+
+.animate-hero-pan {
+  animation: hero-pan 18s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-pan,
+  .animate-fade-up,
+  .animate-slide-left,
+  .animate-slide-right,
+  .animate-fade-in-scale {
+    animation: none !important;
+  }
+}
