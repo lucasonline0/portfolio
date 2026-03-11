@@ -2,15 +2,15 @@ import { Building2, ShieldCheck } from "lucide-react";
 
 const experiences = [
   {
-    period: "2025 - Atualmente",
-    company: "Especialista em Infraestrutura e Dados - Setor Público",
-    role: "Engenheiro Backend e Analista de Dados",
+    period: "2025 - Presente",
+    company: "Engenheiro de Software no Setor Público",
+    role: "Atuação em sistemas e serviços para o setor público",
     icon: ShieldCheck,
   },
   {
-    period: "2023 - Atualmente",
-    company: "Especialista em Sistemas e Automação",
-    role: "Desenvolvedor Full-Stack",
+    period: "2024 - Presente",
+    company: "Responsável pelo gerenciamento do banco de dados",
+    role: "Gestão, manutenção e otimização de banco de dados",
     icon: Building2,
   },
 ];

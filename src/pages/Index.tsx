@@ -1,13 +1,13 @@
 const timeline = [
   {
-    title: "Especialista em Infraestrutura e Dados - Setor Público",
-    role: "Engenheiro Backend e Analista de Dados",
-    period: "2025 - Atualmente",
+    title: "Engenheiro de Software no Setor Público",
+    role: "Atuação em sistemas e serviços para o setor público",
+    period: "2025 - Presente",
   },
   {
-    title: "Especialista em Sistemas e Automação",
-    role: "Desenvolvedor Full-Stack",
-    period: "2023 - Atualmente",
+    title: "Responsável pelo gerenciamento do banco de dados",
+    role: "Gestão, manutenção e otimização de banco de dados",
+    period: "2024 - Presente",
   },
 ];
 
