@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-10 md:gap-16">
           <div className="space-y-6 md:space-y-8 animate-slide-left opacity-0 text-center md:text-left" style={{ animationFillMode: 'forwards' }}>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight">
-              Let's Work
+              Vamos Trabalhar
               <br />
-              Together
+              Juntos
             </h2>
 
             <div className="space-y-3 md:space-y-4 flex flex-col items-center md:items-start">
@@ -48,7 +48,7 @@ const Footer = () => {
               <p className="text-accent text-xs uppercase tracking-wider mb-2">
                 ★ Lucas Madureira
               </p>
-              <p className="text-foreground font-bold text-sm">Portfolio</p>
+              <p className="text-foreground font-bold text-sm">Portfólio</p>
             </div>
 
             <nav className="space-y-2">
@@ -56,7 +56,7 @@ const Footer = () => {
                 href="#about"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                About
+                Sobre
               </a>
             </nav>
           </div>

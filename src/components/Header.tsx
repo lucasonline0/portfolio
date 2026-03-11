@@ -40,19 +40,19 @@ const Header = () => {
             onClick={() => scrollToSection("home")}
             className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
           >
-            [ Home ]
+            [ Início ]
           </button>
           <button
             onClick={() => scrollToSection("experience")}
             className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
           >
-            [ Experience ]
+            [ Experiência ]
           </button>
           <button
             onClick={() => scrollToSection("projects")}
             className="link-underline text-xs tracking-widest uppercase hover:text-accent transition-colors"
           >
-            [ Projects ]
+            [ Projetos ]
           </button>
         </div>
 
@@ -61,7 +61,7 @@ const Header = () => {
             href="mailto:jmadureira00@gmail.com"
             className="text-xs tracking-widest uppercase hover:text-accent transition-colors flex items-center gap-2"
           >
-            Contact
+            Contato
             <span className="inline-block">↗</span>
           </a>
         </div>
@@ -69,7 +69,7 @@ const Header = () => {
         <button
           className="md:hidden p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label="Alternar menu"
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -82,25 +82,25 @@ const Header = () => {
               onClick={() => scrollToSection("home")}
               className="block w-full text-left text-sm tracking-widest uppercase"
             >
-              [ Home ]
+              [ Início ]
             </button>
             <button
               onClick={() => scrollToSection("experience")}
               className="block w-full text-left text-sm tracking-widest uppercase"
             >
-              [ Experience ]
+              [ Experiência ]
             </button>
             <button
               onClick={() => scrollToSection("projects")}
               className="block w-full text-left text-sm tracking-widest uppercase"
             >
-              [ Projects ]
+              [ Projetos ]
             </button>
             <a
               href="mailto:jmadureira00@gmail.com"
               className="block text-sm tracking-widest uppercase"
             >
-              Contact ↗
+              Contato ↗
             </a>
           </div>
         </div>
