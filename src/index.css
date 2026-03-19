@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&family=Red+Hat+Text:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,8 +34,9 @@
 
     --radius: 0.5rem;
 
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Space Grotesk', sans-serif;
+    --font-behind: 'Behind The Nineties', 'Times New Roman', serif;
+    --font-joyride: 'Joyride Pro', 'Arial Black', sans-serif;
+    --font-redhat: 'Red Hat Display', 'Red Hat Text', sans-serif;
   }
 
 @layer base {
@@ -45,12 +46,29 @@
 
   body {
     @apply bg-background text-foreground font-body;
-    font-family: var(--font-body);
+    font-family: var(--font-behind);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: inherit;
   }
+
+  .font-behind {
+    font-family: var(--font-behind);
+  }
+
+  .font-joyride {
+    font-family: var(--font-joyride);
+  }
+
+  .font-redhat {
+    font-family: var(--font-redhat);
+  }
+
+  .text-balance-display {
+    text-wrap: balance;
+  }
+
 }
 
 /* Custom Animations */
