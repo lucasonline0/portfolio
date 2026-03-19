@@ -42,7 +42,7 @@ const projects = [
 
 const Index = () => {
   return (
-    <div className="w-full min-h-screen bg-[#080a0d] text-[#f2ebdf] overflow-x-hidden">
+    <div className="w-full min-h-screen bg-[#080a0d] text-[#f2ebdf] overflow-x-hidden font-body-redhat">
       <main className="w-full">
         <section
           className="min-h-screen w-full bg-cover bg-center border-b border-white/20 animate-hero-pan"
@@ -52,9 +52,9 @@ const Index = () => {
           }}
         >
           <div className="w-full px-4 sm:px-8 lg:px-14 py-5 md:py-8">
-            <div className="flex items-center justify-between text-[10px] sm:text-xs uppercase tracking-[0.2em] text-white/90 animate-fade-up">
+            <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between text-[10px] sm:text-xs uppercase tracking-[0.28em] text-white/90 animate-fade-up font-accent">
               <p>Lucas Madureira</p>
-              <p>Estudante de Ciência da Computação, Desenvolvedor</p>
+              <p className="text-white/75">Estudante de Ciência da Computação, Desenvolvedor</p>
               <div className="flex gap-3 sm:gap-5">
                 <a href="#works" className="hover:text-[#e8cd9d] transition-colors">projetos</a>
                 <a href="#about" className="hover:text-[#e8cd9d] transition-colors">sobre</a>
@@ -64,8 +64,8 @@ const Index = () => {
 
             <div className="mt-14 md:mt-20 grid lg:grid-cols-2 gap-8 items-end">
               <div className="animate-slide-left" style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}>
-                <p className="text-[#f0dfc6] mb-2 text-lg">criativo</p>
-                <h1 className="uppercase font-black leading-[0.86] tracking-tight text-[54px] sm:text-[88px] lg:text-[120px]">
+                <p className="text-[#f0dfc6] mb-3 text-lg sm:text-xl uppercase tracking-[0.35em] font-accent">criativo</p>
+                <h1 className="font-display text-balance-display uppercase leading-[0.82] tracking-[0.04em] text-[56px] sm:text-[92px] lg:text-[124px] drop-shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
                   Estudante de Ciência
                   <br />
                   da Computação
@@ -76,7 +76,7 @@ const Index = () => {
                 className="lg:justify-self-end max-w-xl animate-slide-right"
                 style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
               >
-                <p className="uppercase text-lg sm:text-2xl leading-tight font-semibold">
+                <p className="uppercase text-lg sm:text-2xl leading-tight font-semibold tracking-[0.08em] font-accent text-[#f8e8ca]">
                   Eu construo sistemas robustos e de alta performance, conectando segurança ofensiva e defensiva,
                   arquitetura backend e infraestrutura cloud-native.
                 </p>
@@ -88,7 +88,7 @@ const Index = () => {
                   />
                   <a
                     href="#contact"
-                    className="rounded-full border border-white px-4 py-1.5 uppercase text-sm sm:text-base hover:bg-white hover:text-black transition-all duration-500 hover:scale-105"
+                    className="rounded-full border border-white px-4 py-1.5 uppercase text-sm sm:text-base hover:bg-white hover:text-black transition-all duration-500 hover:scale-105 font-accent tracking-[0.18em]"
                   >
                     Fale comigo
                   </a>
@@ -100,9 +100,9 @@ const Index = () => {
 
         <section id="about" className="w-full bg-[#080a0d] px-4 sm:px-8 lg:px-14 py-16 md:py-20">
           <div className="grid lg:grid-cols-2 gap-10">
-            <h2 className="uppercase font-black leading-[0.84] text-5xl sm:text-7xl animate-fade-up">Olá, eu sou o Lucas</h2>
+            <h2 className="font-display uppercase leading-[0.84] text-5xl sm:text-7xl animate-fade-up tracking-[0.05em]">Olá, eu sou o Lucas</h2>
             <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-              <p className="uppercase text-lg leading-relaxed text-white/90">
+              <p className="uppercase text-lg leading-relaxed text-white/90 font-accent tracking-[0.12em]">
                 Focado em engenharia de cibersegurança, sistemas backend resilientes e observabilidade em nuvem.
                 Eu projeto e implemento software seguro com performance de nível de produção.
               </p>
@@ -113,8 +113,8 @@ const Index = () => {
                     className="border-b border-dashed border-white/25 pb-3 transition-all duration-500 hover:border-[#e8cd9d] hover:translate-x-1"
                     style={{ animationDelay: `${0.25 + index * 0.1}s` }}
                   >
-                    <p className="uppercase text-sm text-[#e8cd9d]">{item.period}</p>
-                    <p className="text-xl font-semibold">{item.title}</p>
+                    <p className="uppercase text-sm text-[#e8cd9d] font-accent tracking-[0.25em]">{item.period}</p>
+                    <p className="text-xl font-semibold font-display tracking-[0.04em]">{item.title}</p>
                     <p className="text-white/75">{item.role}</p>
                   </div>
                 ))}
@@ -124,7 +124,7 @@ const Index = () => {
         </section>
 
         <section id="works" className="w-full bg-[#080a0d] px-4 sm:px-8 lg:px-14 py-16 md:py-20">
-          <p className="uppercase text-lg mb-10 animate-fade-up">✷ Casos selecionados</p>
+          <p className="uppercase text-lg mb-10 animate-fade-up font-accent tracking-[0.3em] text-[#f0dfc6]">✷ Casos selecionados</p>
           <div className="space-y-12">
             {projects.map((project, i) => (
               <article
@@ -133,15 +133,15 @@ const Index = () => {
                 style={{ animationDelay: `${0.15 + i * 0.12}s`, animationFillMode: "forwards" }}
               >
                 <div className={i % 2 ? "md:text-right" : ""}>
-                  <h3 className="uppercase font-black leading-[0.9] text-4xl sm:text-6xl transition-colors duration-500 hover:text-[#e8cd9d]">
+                  <h3 className="font-display uppercase leading-[0.9] text-4xl sm:text-6xl transition-colors duration-500 hover:text-[#e8cd9d] tracking-[0.05em]">
                     {project.title}
                   </h3>
-                  <p className="uppercase text-xs sm:text-sm tracking-wider text-white/70 mt-1">{project.subtitle}</p>
+                  <p className="uppercase text-xs sm:text-sm tracking-[0.22em] text-white/70 mt-2 font-accent">{project.subtitle}</p>
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-3 underline uppercase text-sm transition-all duration-500 hover:text-[#e8cd9d] hover:translate-x-1"
+                    className="inline-block mt-3 underline uppercase text-sm transition-all duration-500 hover:text-[#e8cd9d] hover:translate-x-1 font-accent tracking-[0.16em]"
                   >
                     Ver caso ↗
                   </a>
@@ -167,14 +167,14 @@ const Index = () => {
           }}
         >
           <div className="w-full min-h-[70vh] px-4 sm:px-8 lg:px-14 py-14 md:py-16 grid lg:grid-cols-[1fr_1.4fr] gap-8 items-end">
-            <h2 className="uppercase font-black leading-[0.8] text-[52px] sm:text-[90px] lg:text-[120px] animate-slide-left">Vamos nos conectar</h2>
+            <h2 className="font-display uppercase leading-[0.8] text-[52px] sm:text-[90px] lg:text-[120px] animate-slide-left tracking-[0.05em]">Vamos nos conectar</h2>
             <div className="animate-slide-right" style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}>
-              <p className="uppercase mb-4">Tenho interesse em</p>
+              <p className="uppercase mb-4 font-accent tracking-[0.28em] text-[#f0dfc6]">Tenho interesse em</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {areas.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-white/80 px-3 py-1 uppercase text-sm transition-all duration-500 hover:border-[#e8cd9d] hover:text-[#e8cd9d]"
+                    className="rounded-full border border-white/80 px-3 py-1 uppercase text-sm transition-all duration-500 hover:border-[#e8cd9d] hover:text-[#e8cd9d] font-accent tracking-[0.15em]"
                   >
                     {tag}
                   </span>
@@ -182,11 +182,11 @@ const Index = () => {
               </div>
               <a
                 href="mailto:jmadureira00@gmail.com"
-                className="inline-block rounded-full bg-white text-black px-5 py-2 font-semibold uppercase transition-all duration-500 hover:scale-105"
+                className="inline-block rounded-full bg-white text-black px-5 py-2 font-semibold uppercase transition-all duration-500 hover:scale-105 font-accent tracking-[0.18em]"
               >
                 Fale comigo
               </a>
-              <div className="mt-6 flex gap-4 text-xs uppercase tracking-wider text-white/80">
+              <div className="mt-6 flex gap-4 text-xs uppercase tracking-[0.22em] text-white/80 font-accent">
                 <a href="https://github.com/lucasonline0" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8cd9d] transition-colors">GitHub</a>
                 <a href="https://www.linkedin.com/in/lucasblackstar/" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8cd9d] transition-colors">LinkedIn</a>
                 <a href="mailto:jmadureira00@gmail.com" className="hover:text-[#e8cd9d] transition-colors">E-mail</a>
