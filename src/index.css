@@ -34,9 +34,9 @@
 
     --radius: 0.5rem;
 
-    --font-heading: 'Behind The Nineties', 'Red Hat Display', 'Arial Black', sans-serif;
-    --font-accent: 'Joyride Pro', 'Red Hat Display', sans-serif;
-    --font-body: 'Red Hat Text', 'Red Hat Display', sans-serif;
+    --font-behind: 'Behind The Nineties', 'Times New Roman', serif;
+    --font-joyride: 'Joyride Pro', 'Arial Black', sans-serif;
+    --font-redhat: 'Red Hat Display', 'Red Hat Text', sans-serif;
   }
 
 @layer base {
@@ -46,23 +46,23 @@
 
   body {
     @apply bg-background text-foreground font-body;
-    font-family: var(--font-body);
+    font-family: var(--font-behind);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
+    font-family: inherit;
   }
 
-  .font-display {
-    font-family: var(--font-heading);
+  .font-behind {
+    font-family: var(--font-behind);
   }
 
-  .font-accent {
-    font-family: var(--font-accent);
+  .font-joyride {
+    font-family: var(--font-joyride);
   }
 
-  .font-body-redhat {
-    font-family: var(--font-body);
+  .font-redhat {
+    font-family: var(--font-redhat);
   }
 
   .text-balance-display {
