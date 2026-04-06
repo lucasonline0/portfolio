@@ -1,43 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&family=Red+Hat+Text:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 4%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 4%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4%;
-
-    --primary: 0 0% 4%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 4%;
-
-    --muted: 0 0% 94%;
-    --muted-foreground: 0 0% 45%;
-
-    --accent: 25 95% 53%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 4%;
-
-    --radius: 0.5rem;
-
-    --font-behind: 'Behind The Nineties', 'Times New Roman', serif;
-    --font-joyride: 'Joyride Pro', 'Arial Black', sans-serif;
-    --font-redhat: 'Red Hat Display', 'Red Hat Text', sans-serif;
-  }
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 4%;
+  --card: 0 0% 98%;
+  --card-foreground: 0 0% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 4%;
+  --primary: 0 0% 4%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 4%;
+  --muted: 0 0% 94%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 25 95% 53%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 4%;
+  --radius: 0.5rem;
+  --font-display: 'Syne', 'Arial Black', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+}
 
 @layer base {
   * {
@@ -46,32 +36,26 @@
 
   body {
     @apply bg-background text-foreground font-body;
-    font-family: var(--font-behind);
+    font-family: var(--font-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
+    font-family: var(--font-display);
   }
 
-  .font-behind {
-    font-family: var(--font-behind);
+  .font-display {
+    font-family: var(--font-display);
   }
 
-  .font-joyride {
-    font-family: var(--font-joyride);
-  }
-
-  .font-redhat {
-    font-family: var(--font-redhat);
+  .font-body {
+    font-family: var(--font-body);
   }
 
   .text-balance-display {
     text-wrap: balance;
   }
-
 }
 
-/* Custom Animations */
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -143,6 +127,24 @@
   }
 }
 
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icon-bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -199,7 +201,6 @@
   animation: letter-spacing-expand 1s ease-out forwards;
 }
 
-/* Staggered animation delays */
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
@@ -209,7 +210,6 @@
 .delay-700 { animation-delay: 0.7s; }
 .delay-800 { animation-delay: 0.8s; }
 
-/* Hover Effects */
 .hover-lift {
   @apply transition-all duration-300 ease-out;
 }
@@ -226,7 +226,6 @@
   background-clip: text;
 }
 
-/* Link underline animation */
 .link-underline {
   @apply relative;
 }
@@ -240,7 +239,6 @@
   @apply w-full;
 }
 
-/* Card shine effect */
 .card-shine {
   @apply relative overflow-hidden;
 }
@@ -270,7 +268,6 @@
   }
 }
 
-/* Glitch effect for title */
 .glitch {
   @apply relative;
 }
@@ -287,7 +284,6 @@
   80% { transform: translate(2px, -2px); }
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -325,12 +321,86 @@ html {
   animation: hero-pan 18s ease-in-out infinite;
 }
 
+.icon-cta svg {
+  transition: transform 220ms ease;
+  animation: icon-bob 2.8s ease-in-out infinite;
+}
+
+.icon-cta:hover svg,
+.icon-cta:focus-visible svg {
+  transform: translate(2px, -2px);
+}
+
+.avatar-orbit {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.avatar-ring-a {
+  animation: orbit-spin 10s linear infinite;
+}
+
+.avatar-ring-b {
+  inset: -13px;
+  border-style: dashed;
+  border-color: rgba(232, 205, 157, 0.3);
+  animation: orbit-spin 14s linear infinite reverse;
+}
+
+.interest-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.interest-pill-icon {
+  animation: pulse-glow 2.4s ease-in-out infinite;
+}
+
+.interest-pill:hover .interest-pill-icon {
+  animation: icon-bob 0.7s ease-in-out infinite;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.social-link svg {
+  transition:
+    transform 220ms ease,
+    color 220ms ease;
+}
+
+.social-link:hover svg,
+.social-link:focus-visible svg {
+  transform: translateY(-2px) scale(1.12);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-hero-pan,
   .animate-fade-up,
   .animate-slide-left,
   .animate-slide-right,
   .animate-fade-in-scale {
+    animation: none !important;
+  }
+
+  .icon-cta svg,
+  .interest-pill-icon,
+  .avatar-ring-a,
+  .avatar-ring-b {
     animation: none !important;
   }
 }
